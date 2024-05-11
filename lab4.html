@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alumni Membership Application</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>  </body>
+    <header>Alumni Membership Application</header>
+    <main>
+      <div>
+        <label> Privacy Notice</label>
+        <p>
+          In Lyceum of the Philippines University we value your privacy and aim
+          to uphold the same when processing your personal data. For purposes of
+          activating, accessing your alumni portal and research purposes by LPU
+          - Cavite community, we may collect basic information about you such as
+          your student number, name, birthdate, course, year, and semester
+          graduated, office 365 email address, civil status, gender, complete
+          home address, contact number, email address, jobs180 resume link and
+          employment details. We are committed to protecting your personal data
+          from loss, misuse, and any unauthorized processing activities, and
+          will take all reasonable precautions to safeguard its security and
+          confidentiality. Neither will we disclose, share, or transfer the same
+          to any third party without your consent. Your data will be retained by
+          the Alumni Office permanently, the same may be updated and accessed by
+          the Data Subject from time to time upon request. Obsolete data shall
+          be disposed of in a safe and secure manner. We recognize your rights
+          with respect to your personal data. Should you wish to exercise any of
+          them or if you have any concerns regarding our processing activities,
+          you may contact us privacy.cavite@lpu.edu.ph Thank you.
+          <br />
+          General Instruction: Please complete all the required fields marked
+          with asterisk (*)
+        </p>
+      </div>
+      <div>
+        <header style="font-size: 29">Basic Information</header>
+        <div>
+          <label for="salutation">Salutation *<br /></label>
+          <select
+            class="form-select"
+            id="salutation"
+            name="salutation"
+            required
+          >
+            <option selected value="">None Selected</option>
+            <option value="1">Mr.</option>
+            <option value="2">Ms.</option>
+            <option value="3">Atty.</option>
+            <option value="4">Engr.</option>
+            <option value="5">Dr.</option>
+          </select>
+        </div>
+        <div>
+          <label for="fname">First Name *<br /></label>
+          <input type="text" id="fname" name="fname" required value="" />
+        </div>
+        <div>
+          <label for="mname">First Name *<br /></label>
+          <input type="text" id="mname" name="mname" required value="" />
+        </div>
+        <div>
+          <label for="surname">Middle Name *<br /></label>
+          <input type="text" id="surname" name="surname" required value="" />
+        </div>
+        <div>
+          <label for="maiden">Maiden Name<br /></label>
+          <input type="text" id="maiden" name="maiden" value="" />
+        </div>
+        <div>
+          <label for="civilStatus">Civil Status *<br /></label>
+          <select
+            class="form-select"
+            id="civilStatus"
+            name="civilStatus"
+            required
+          >
+            <option selected value="">None Selected</option>
+            <option value="1">Single</option>
+            <option value="2">Married</option>
+            <option value="3">Divorced</option>
+            <option value="4">Widowed</option>
+          </select>
+        </div>
+        <div>
+          <label for="gender">Gender at Birth *<br /></label>
+          <select class="form-select" id="gender" name="gender" required>
+            <option selected value="">None Selected</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+          </select>
+        </div>
+        <div>
+          <label for="bdate">Birth Date<br /></label>
+          <input type="date" id="bdate" name="bdate" />
+        </div>
+      </div>
+    
+    <div>
+      <header style="font-size: 29">Contact Information</header>
+      <div>
+        <label for="contact">Contact Number *<br /></label>
+        <input type="text" id="contact" name="contact" value="" />
+      </div>
+      <div>
+        <label for="pEmail">Primary Email Address *<br /></label>
+        <input
+          type="text"
+          id="pEmail"
+          name="pEmail"
+          value="Your Microsoft Office 365 address"
+        />
+      </div>
+      <div>
+        <label for="sEmail">Secondary Email Address *<br /></label>
+        <input
+          type="text"
+          id="sEmail"
+          name="sEmail"
+          value="Your active personal email address"
+        />
+      </div>
+      <div>
+        <label for="resume-link">Resumé Link*<br /></label>
+        <input type="text" id="resume-link" name="resume-link" value="" />
+      </div>
+      <div>
+        <input
+          id="pAddress"
+          name="is_present_address"
+          required
+          type="radio"
+          value="0"
+        />
+        <label class="form-check-label" for="pAddress"
+          >Check this if you are currently residing in this address<br />Present
+          Address</label
+        >
+      </div>
+      <div>
+        <select class="form-select" name="country" required>
+          <option selected value="">None Selected</option>
+          <option value="1">Afghanistan</option>
+          <option value="2">Albania</option>
+          <option value="3">Algeria</option>
+          <option value="4">American Samoa</option>
+          <option value="5">Andorra</option>
+          <option value="6">Angola</option>
+          <option value="7">Anguilla</option>
+          <option value="8">Antarctica</option>
+          <option value="9">Antigua and Barbuda</option>
+          <option value="10">Argentina</option>
+          <option value="11">Armenia</option>
+          <option value="12">Aruba</option>
+          <option value="13">Australia</option>
+          <option value="14">Austria</option>
+          <option value="15">Azerbaijan</option>
+          <option value="16">Bahamas</option>
+          <option value="17">Bahrain</option>
+          <option value="18">Bangladesh</option>
+          <option value="19">Barbados</option>
+          <option value="20">Belarus</option>
+          <option value="21">Belgium</option>
+          <option value="22">Belize</option>
+          <option value="23">Benin</option>
+          <option value="24">Bermuda</option>
+          <option value="25">Bhutan</option>
+          <option value="26">Bolivia</option>
+          <option value="27">Bosnia and Herzegovina</option>
+          <option value="28">Botswana</option>
+          <option value="29">Bouvet Island</option>
+          <option value="30">Brazil</option>
+          <option value="31">British Indian Ocean Territory</option>
+          <option value="32">British Virgin Islands</option>
+          <option value="33">Brunei</option>
+          <option value="34">Bulgaria</option>
+          <option value="35">Burkina Faso</option>
+          <option value="36">Burundi</option>
+          <option value="37">Cambodia</option>
+          <option value="38">Cameroon</option>
+          <option value="39">Canada</option>
+          <option value="40">Cape Verde</option>
+          <option value="41">Caribbean Netherlands</option>
+          <option value="42">Cayman Islands</option>
+          <option value="43">Central African Republic</option>
+          <option value="44">Chad</option>
+          <option value="45">Chile</option>
+          <option value="46">China</option>
+          <option value="47">Christmas Island</option>
+          <option value="48">Cocos (Keeling) Islands</option>
+          <option value="49">Colombia</option>
+          <option value="50">Comoros</option>
+          <option value="51">Cook Islands</option>
+          <option value="52">Costa Rica</option>
+          <option value="53">Croatia</option>
+          <option value="54">Cuba</option>
+          <option value="55">Curaçao</option>
+          <option value="56">Cyprus</option>
+          <option value="57">Czechia</option>
+          <option value="58">DR Congo</option>
+          <option value="59">Denmark</option>
+          <option value="60">Djibouti</option>
+          <option value="61">Dominica</option>
+          <option value="62">Dominican Republic</option>
+          <option value="63">Ecuador</option>
+          <option value="64">Egypt</option>
+          <option value="65">El Salvador</option>
+          <option value="66">Equatorial Guinea</option>
+          <option value="67">Eritrea</option>
+          <option value="68">Estonia</option>
+          <option value="69">Eswatini</option>
+          <option value="70">Ethiopia</option>
+          <option value="71">Falkland Islands</option>
+          <option value="72">Faroe Islands</option>
+          <option value="73">Fiji</option>
+          <option value="74">Finland</option>
+          <option value="75">France</option>
+          <option value="76">French Guiana</option>
+          <option value="77">French Polynesia</option>
+          <option value="78">French Southern and Antarctic Lands</option>
+          <option value="79">Gabon</option>
+          <option value="80">Gambia</option>
+          <option value="81">Georgia</option>
+          <option value="82">Germany</option>
+          <option value="83">Ghana</option>
+          <option value="84">Gibraltar</option>
+          <option value="85">Greece</option>
+          <option value="86">Greenland</option>
+          <option value="87">Grenada</option>
+          <option value="88">Guadeloupe</option>
+          <option value="89">Guam</option>
+          <option value="90">Guatemala</option>
+          <option value="91">Guernsey</option>
+          <option value="92">Guinea</option>
+          <option value="93">Guinea-Bissau</option>
+          <option value="94">Guyana</option>
+          <option value="95">Haiti</option>
+          <option value="96">Heard Island and McDonald Islands</option>
+          <option value="97">Honduras</option>
+          <option value="98">Hong Kong</option>
+          <option value="99">Hungary</option>
+          <option value="100">Iceland</option>
+          <option value="101">India</option>
+          <option value="102">Indonesia</option>
+          <option value="103">Iran</option>
+          <option value="104">Iraq</option>
+          <option value="105">Ireland</option>
+          <option value="106">Isle of Man</option>
+          <option value="107">Israel</option>
+          <option value="108">Italy</option>
+          <option value="109">Ivory Coast</option>
+          <option value="110">Jamaica</option>
+          <option value="111">Japan</option>
+          <option value="112">Jersey</option>
+          <option value="113">Jordan</option>
+          <option value="114">Kazakhstan</option>
+          <option value="115">Kenya</option>
+          <option value="116">Kiribati</option>
+          <option value="117">Kosovo</option>
+          <option value="118">Kuwait</option>
+          <option value="119">Kyrgyzstan</option>
+          <option value="120">Laos</option>
+          <option value="121">Latvia</option>
+          <option value="122">Lebanon</option>
+          <option value="123">Lesotho</option>
+          <option value="124">Liberia</option>
+          <option value="125">Libya</option>
+          <option value="126">Liechtenstein</option>
+          <option value="127">Lithuania</option>
+          <option value="128">Luxembourg</option>
+          <option value="129">Macau</option>
+          <option value="130">Madagascar</option>
+          <option value="131">Malawi</option>
+          <option value="132">Malaysia</option>
+          <option value="133">Maldives</option>
+          <option value="134">Mali</option>
+          <option value="135">Malta</option>
+          <option value="136">Marshall Islands</option>
+          <option value="137">Martinique</option>
+          <option value="138">Mauritania</option>
+          <option value="139">Mauritius</option>
+          <option value="140">Mayotte</option>
+          <option value="141">Mexico</option>
+          <option value="142">Micronesia</option>
+          <option value="143">Moldova</option>
+          <option value="144">Monaco</option>
+          <option value="145">Mongolia</option>
+          <option value="146">Montenegro</option>
+          <option value="147">Montserrat</option>
+          <option value="148">Morocco</option>
+          <option value="149">Mozambique</option>
+          <option value="150">Myanmar</option>
+          <option value="151">Namibia</option>
+          <option value="152">Nauru</option>
+          <option value="153">Nepal</option>
+          <option value="154">Netherlands</option>
+          <option value="155">New Caledonia</option>
+          <option value="156">New Zealand</option>
+          <option value="157">Nicaragua</option>
+          <option value="158">Niger</option>
+          <option value="159">Nigeria</option>
+          <option value="160">Niue</option>
+          <option value="161">Norfolk Island</option>
+          <option value="162">North Korea</option>
+          <option value="163">North Macedonia</option>
+          <option value="164">Northern Mariana Islands</option>
+          <option value="165">Norway</option>
+          <option value="166">Oman</option>
+          <option value="167">Pakistan</option>
+          <option value="168">Palau</option>
+          <option value="169">Palestine</option>
+          <option value="170">Panama</option>
+          <option value="171">Papua New Guinea</option>
+          <option value="172">Paraguay</option>
+          <option value="173">Peru</option>
+          <option value="174">Philippines</option>
+          <option value="175">Pitcairn Islands</option>
+          <option value="176">Poland</option>
+          <option value="177">Portugal</option>
+          <option value="178">Puerto Rico</option>
+          <option value="179">Qatar</option>
+          <option value="180">Republic of the Congo</option>
+          <option value="181">Romania</option>
+          <option value="182">Russia</option>
+          <option value="183">Rwanda</option>
+          <option value="184">Réunion</option>
+          <option value="185">Saint Barthélemy</option>
+          <option value="186">
+            Saint Helena, Ascension and Tristan da Cunha
+          </option>
+          <option value="187">Saint Kitts and Nevis</option>
+          <option value="188">Saint Lucia</option>
+          <option value="189">Saint Martin</option>
+          <option value="190">Saint Pierre and Miquelon</option>
+          <option value="191">Saint Vincent and the Grenadines</option>
+          <option value="192">Samoa</option>
+          <option value="193">San Marino</option>
+          <option value="194">Saudi Arabia</option>
+          <option value="195">Senegal</option>
+          <option value="196">Serbia</option>
+          <option value="197">Seychelles</option>
+          <option value="198">Sierra Leone</option>
+          <option value="199">Singapore</option>
+          <option value="200">Sint Maarten</option>
+          <option value="201">Slovakia</option>
+          <option value="202">Slovenia</option>
+          <option value="203">Solomon Islands</option>
+          <option value="204">Somalia</option>
+          <option value="205">South Africa</option>
+          <option value="206">South Georgia</option>
+          <option value="207">South Korea</option>
+          <option value="208">South Sudan</option>
+          <option value="209">Spain</option>
+          <option value="210">Sri Lanka</option>
+          <option value="211">Sudan</option>
+          <option value="212">Suriname</option>
+          <option value="213">Svalbard and Jan Mayen</option>
+          <option value="214">Sweden</option>
+          <option value="215">Switzerland</option>
+          <option value="216">Syria</option>
+          <option value="217">São Tomé and Príncipe</option>
+          <option value="218">Taiwan</option>
+          <option value="219">Tajikistan</option>
+          <option value="220">Tanzania</option>
+          <option value="221">Thailand</option>
+          <option value="222">Timor-Leste</option>
+          <option value="223">Togo</option>
+          <option value="224">Tokelau</option>
+          <option value="225">Tonga</option>
+          <option value="226">Trinidad and Tobago</option>
+          <option value="227">Tunisia</option>
+          <option value="228">Turkey</option>
+          <option value="229">Turkmenistan</option>
+          <option value="230">Turks and Caicos Islands</option>
+          <option value="231">Tuvalu</option>
+          <option value="232">Uganda</option>
+          <option value="233">Ukraine</option>
+          <option value="234">United Arab Emirates</option>
+          <option value="235">United Kingdom</option>
+          <option value="236">United States</option>
+          <option value="237">United States Minor Outlying Islands</option>
+          <option value="238">United States Virgin Islands</option>
+          <option value="239">Uruguay</option>
+          <option value="240">Uzbekistan</option>
+          <option value="241">Vanuatu</option>
+          <option value="242">Vatican City</option>
+          <option value="243">Venezuela</option>
+          <option value="244">Vietnam</option>
+          <option value="245">Wallis and Futuna</option>
+          <option value="246">Western Sahara</option>
+          <option value="247">Yemen</option>
+          <option value="248">Zambia</option>
+          <option value="249">Zimbabwe</option>
+          <option value="250">Åland Islands</option>
+        </select>
+      </div>
+      <div>
+        <label>Island Group</label>
+        <div>
+          <select class="form-select" name="" required>
+            <option selected value="">None Selected</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label>Region</label>
+        <div>
+          <select class="form-select region" name="region" required>
+            <option selected value="">None Selected</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label>Province</label>
+        <div>
+          <select class="form-select" name="province" required>
+            <option selected value="">None Selected</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label>City and Municipality</label>
+        <div>
+          <select class="form-select" name="city_and_municipality" required>
+            <option selected value="">None Selected</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label>Barangay</label>
+        <div>
+          <select class="form-select barangay" name="barangay" required>
+            <option selected value="">None Selected</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label>Address</label>
+        <div>
+          <input
+            name="address"
+            required
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div>
+        <label>Telephone Number</label>
+        <div>
+          <input
+            name="telephone_number"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  <div>
+    <header style="font-size: 29">EDUCATIONAL BACKGROUND</header>
+    <div>
+      <div>
+        <label for="idMumber">Student Number</label>
+          <input
+            id="idMumber"
+            name="idMumber"
+            placeholder="e.g. 1234-5-67890"
+            required
+            type="text"
+            value=""
+          />
+      </div>
+      <div>
+        <label for="program">Program</label>
+          <select
+            id="program"
+            name="program"
+            required>
+            <option selected value="">None Selected</option>
+            <option value="1">
+              Bachelor of Science in Biology
+            </option>
+            <option value="2">
+              Bachelor of Science in Medical Technology
+            </option>
+            <option value="3">
+              Bachelor of Science in Nutrition and Dietetics
+            </option>
+            <option value="4">
+              Bachelor of Science in Pharmacy
+            </option>
+            <option value="5">
+              Bachelor of Science in Radiolic Technology
+            </option>
+            <option value="6">
+              Bachelor of Arts in Communication Broadcasting
+            </option>
+            <option value="7">Bachelor of Arts in English</option>
+            <option value="8">
+              Bachelor of Arts in Foreign Service
+            </option>
+            <option value="9">
+              Bachelor of Arts in Legal Studies
+            </option>
+            <option value="10">
+              Bachelor of Arts in Multimedia Arts
+            </option>
+            <option value="11">
+              Bachelor of Elementary Education - Major in
+              Pre-School Education
+            </option>
+            <option value="12">
+              Bachelor of Science in Foreign Service
+            </option>
+            <option value="13">
+              Bachelor of Science in Psychology
+            </option>
+            <option value="14">
+              Bachelor of Secondary Education - Major in English
+            </option>
+            <option value="15">
+              Bachelor of Science in Accountancy
+            </option>
+            <option value="16">
+              Bachelor of Science in Business Administration -
+              Major in Human Resource Development Management
+            </option>
+            <option value="17">
+              Bachelor of Science in Business Administration -
+              Major in Management Accounting
+            </option>
+            <option value="18">
+              Bachelor of Science in Business Administration -
+              Major in Marketing Management
+            </option>
+            <option value="19">
+              Bachelor of Science in Business Administration -
+              Major in Operations Management
+            </option>
+            <option value="20">
+              Bachelor of Science in Custom Administration
+            </option>
+            <option value="21">
+              Bachelor of Science in Real Estate Management
+            </option>
+            <option value="22">
+              Bachelor of Science in Architecture
+            </option>
+            <option value="23">
+              Bachelor of Science in Civil Engineering
+            </option>
+            <option value="24">
+              Bachelor of Science in Computer Engineering
+            </option>
+            <option value="25">
+              Bachelor of Science in Computer Science
+            </option>
+            <option value="26">
+              Bachelor of Science in Electrical Engineering
+            </option>
+            <option value="27">
+              Bachelor of Science in Electronics Engineering
+            </option>
+            <option value="28">
+              Bachelor of Science in Industrial Engineering
+            </option>
+            <option value="29">
+              Bachelor of Science in Information Technology
+            </option>
+            <option value="30">
+              Bachelor of Science in Mechanical Engineering
+            </option>
+            <option value="31">
+              Bachelor of Science in Hotel and Hospitality
+              Management - ESP Tongmyong University
+            </option>
+            <option value="32">
+              Bachelor of Science in Hotel and Restaurant
+              Management
+            </option>
+            <option value="33">
+              Bachelor of Science in Hotel and Restaurant
+              Management - Major in Cruise Line
+            </option>
+            <option value="34">
+              Bachelor of Science in International Hospitality
+              Management - with Specialization in Hotel and
+              Restaurant Administration
+            </option>
+            <option value="35">
+              Bachelor of Science in International Hospitality
+              Management - with Specialization in Culinary Arts
+              and Kitchen Operations
+            </option>
+            <option value="36">
+              Bachelor of Science in International Hospitality
+              Management - with Specialization in Cruise Line
+              Operations in Culinary Arts
+            </option>
+            <option value="37">
+              Bachelor of Science in International Hospitality
+              Management - with Specialization in Cruise Line
+              Operations in Hotel Services
+            </option>
+            <option value="38">
+              Bachelor of Science in International Travel and
+              Tourism Management-Health and Wellness
+            </option>
+            <option value="39">
+              Bachelor of Science in Tourism Management
+            </option>
+            <option value="40">
+              Bachelor of Science in International Travel and
+              Tourism Management
+            </option>
+            <option value="41">Law</option>
+            <option value="42">
+              Master of Arts in Education - Major in Educational
+              Management
+            </option>
+            <option value="43">
+              Master in Business Administration
+            </option>
+            <option value="44">
+              Master in International Hospitality Management
+            </option>
+            <option value="45">
+              Master in International Travel and Tourism
+              Management
+            </option>
+            <option value="46">
+              Master in Public Administration
+            </option>
+            <option value="47">
+              Ph.D. in Business Management
+            </option>
+            <option value="48">
+              Ph.D. in Public Policy and Management
+            </option>
+            <option value="49">
+              Ph.D. in International Hospitality Management
+            </option>
+            <option value="50">
+              Ph.D. in International Tourism Management
+            </option>
+            <option value="51">Ph.D. in English Language</option>
+            <option value="52">
+              Bachelor of Science in Entrepreneurship
+            </option>
+            <option value="53">
+              Bachelor of Multimedia Arts
+            </option>
+            <option value="54">
+              Bachelor in Library Information Science
+            </option>
+            <option value="55">Sports Track</option>
+            <option value="56">
+              Technical-Vocational Livelihood Track - Home
+              Economics with Specialization in Culinary Arts
+            </option>
+            <option value="57">Taekwondo</option>
+            <option value="58">
+              Technical-Vocational Livelihood Track - Home
+              Economics with Specialization in Beauty and Wellness
+            </option>
+            <option value="59">
+              Technical-Vocational Livelihood Track - Information
+              and Communication Technology
+            </option>
+            <option value="60">
+              Technical-Vocational Livelihood Track - Home
+              Economics with Specialization in Tourism
+            </option>
+            <option value="61">
+              Technical-Vocational Livelihood Track - Home
+              Economics with Specialization in Hospitality
+            </option>
+            <option value="62">Arts and Design Track</option>
+            <option value="63">
+              Academic Track - Accountancy, Business and
+              Management
+            </option>
+            <option value="64">
+              Academic Track- General Academic Strand
+            </option>
+            <option value="65">
+              Academic Track - Humanities and Social Sciences
+              Strand
+            </option>
+            <option value="66">
+              Academic Track - Science, Technology, Engineering
+              and Mathematics
+            </option>
+            <option value="67">
+              Bachelor of Science in Nursing
+            </option>
+            <option value="68">Bachelor of Fine Arts</option>
+            <option value="69">
+              Professional Teaching Certification
+            </option>
+          </select>
+      </div>
+      <div>
+        <label for="academicYear">Year Graduated</label>
+          <select
+            id="academicYear"
+            name="academicYear"
+            required
+          >
+            <option selected value="">None Selected</option>
+            <option value="1">2012</option>
+            <option value="2">2013</option>
+            <option value="3">2014</option>
+            <option value="4">2015</option>
+            <option value="5">2016</option>
+            <option value="6">2017</option>
+            <option value="7">2018</option>
+            <option value="8">2019</option>
+            <option value="9">2020</option>
+            <option value="10">2021</option>
+            <option value="11">2022</option>
+            <option value="12">2023</option>
+            <option value="13">2024</option>
+          </select>
+      </div>
+      <div>
+        <label for="semester">Semester Graduated</label>
+        <div>
+          <select
+            id="semester"
+            name="semester"
+            required
+          >
+            <option selected value="">None Selected</option>
+            <option value="1">First</option>
+            <option value="2">Second</option>
+            <option value="3">Summer</option>
+            <option value="4">Third</option>
+          </select>
+        </div>
+    </div>
+  </div>
+  </div>  
+  <header style="font-size: 29;"> WORK EXPERIENCES</header>
+    <div>
+      <input
+        id="pAddress"
+        name="is_present_address"
+        required
+        type="radio"
+        value="0"
+      />
+      <label class="form-check-label" for="pAddress"
+        >Note: If you don't have any work experience
+          yet, you may include your OJT experience and set your
+          Employment Status as "OJT"
+          </label
+      >
+    </div>
+  <div>
+      <div>
+        <div>
+          <div>
+            <label for="company_name">Company Name</label>
+              <input
+                id="company_name"
+                name="company_name"
+                required
+                type="text"
+                value=""/>
+          </div>
+          <div>
+            <label for="posCompany">Position in the Company</label>
+              <input
+                id="posCompany"
+                name="posCompany"
+                required
+                type="text"
+                value=""/>
+          </div>
+          <div>
+            <label for="comAddress">Company Address</label>
+              <input
+                id="comAddress"
+                name="comAddress"
+                required
+                type="text"
+                value=""/>
+          </div>
+          <div>
+            <label for="busiNumber">Business Phone Number</label>
+              <input
+                id="busiNumber"
+                name="busiNumber"
+                required
+                type="text"
+                value=""/>
+          </div>
+          <div>
+            <label for="faxNum">Fax Number</label>
+              <input
+                id="faxNum"
+                name="faxNum"
+                required
+                type="text"
+                value=""/>
+          </div>
+          <div>
+            <label for="supervisor">Name of Immediate Supervisor</label>
+              <input
+                id="supervisor"
+                name="supervisor"
+                required
+                type="text"
+                value=""/>
+          </div>
+          <div>
+            <label for="emailSupervisor">Email Address of Immediate Supervisor</label>
+              <input
+                id="emailSupervisor"
+                name="emailSupervisor"
+                required
+                type="text"
+                value=""/>
+          </div>
+          <div>
+            <label for="contactSupervisor">Contact Number of Immediate Supervisor</label>
+              <input
+                id="contactSupervisor"
+                name="contactSupervisor"
+                required
+                type="text"
+                value=""/>
+          </div>
+          <div>
+            <label for="dateEmploy">Date of Employment<br /></label>
+            <input type="date" id="dateEmploy" name="dateEmploy" />
+          </div>
+          <div>
+            <label for="employment-status">Employment Status</label>
+            <div>
+              <select
+                id="employment-status"
+                name="employment_status"
+                required>
+                <option selected value="">None Selected</option>
+                <option value="1">Casual</option>
+                <option value="2">Job Order</option>
+                <option value="3">Probationary</option>
+                <option value="4">Permanent</option>
+                <option value="5">Self-Employed</option>
+                <option value="6">OFW</option>
+                <option value="7">OJT/Internship</option>
+              </select>
+            </div>
+          </div>
+      </div>
+    </main>
+    <footer></footer>
+</html>
