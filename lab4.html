@@ -477,7 +477,9 @@
     </div>
   <div>
     <header style="font-size: 29">EDUCATIONAL BACKGROUND</header>
-    <div>
+  </div>
+    <div class="grid-container">
+    <div class="grid-item">
       <div>
         <label for="idMumber">Student Number</label>
           <input
@@ -719,6 +721,8 @@
             </option>
           </select>
       </div>
+    </div>
+    <div class="grid-item">
       <div>
         <label for="academicYear">Year Graduated</label>
           <select
@@ -769,16 +773,14 @@
         type="radio"
         value="0"
       />
-      <label class="form-check-label" for="pAddress"
-        >Note: If you don't have any work experience
+      <label class="form-check-label" for="pAddress">
+        <text class="red">Note: If you don't have any work experience
           yet, you may include your OJT experience and set your
-          Employment Status as "OJT"
-          </label
-      >
+          Employment Status as "OJT"</text>
+      </label>
     </div>
-  <div>
-      <div>
-        <div>
+  <div class="grid-container">
+      <div class="grid-item">
           <div>
             <label for="company_name">Company Name</label>
               <input
@@ -824,6 +826,8 @@
                 type="text"
                 value=""/>
           </div>
+      </div>
+      <div class="grid-item">
           <div>
             <label for="supervisor">Name of Immediate Supervisor</label>
               <input
@@ -873,7 +877,8 @@
               </select>
             </div>
           </div>
-      </div>
+        </div>
+    </div>
     </main>
     <footer></footer>
 </html>
