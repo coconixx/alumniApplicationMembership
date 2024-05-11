@@ -36,94 +36,105 @@
       </div>
       <div>
         <header style="font-size: 29">Basic Information</header>
-        <div>
-          <label for="salutation">Salutation *<br /></label>
-          <select
-            class="form-select"
-            id="salutation"
-            name="salutation"
-            required
-          >
-            <option selected value="">None Selected</option>
-            <option value="1">Mr.</option>
-            <option value="2">Ms.</option>
-            <option value="3">Atty.</option>
-            <option value="4">Engr.</option>
-            <option value="5">Dr.</option>
-          </select>
+      <div class="grid-container">
+        <div class="grid-item">
+          <div>
+            <label for="salutation">Salutation *<br /></label>
+            <select
+              class="form-select"
+              id="salutation"
+              name="salutation"
+              required
+            >
+              <option selected value="">None Selected</option>
+              <option value="1">Mr.</option>
+              <option value="2">Ms.</option>
+              <option value="3">Atty.</option>
+              <option value="4">Engr.</option>
+              <option value="5">Dr.</option>
+            </select>
+          </div>
+          <div>
+            <label for="fname">First Name *<br /></label>
+            <input type="text" id="fname" name="fname" required value="" />
+          </div>
+          <div>
+            <label for="mname">First Name *<br /></label>
+            <input type="text" id="mname" name="mname" required value="" />
+          </div>
+          <div>
+            <label for="surname">Middle Name *<br /></label>
+            <input type="text" id="surname" name="surname" required value="" />
+          </div>
         </div>
-        <div>
-          <label for="fname">First Name *<br /></label>
-          <input type="text" id="fname" name="fname" required value="" />
-        </div>
-        <div>
-          <label for="mname">First Name *<br /></label>
-          <input type="text" id="mname" name="mname" required value="" />
-        </div>
-        <div>
-          <label for="surname">Middle Name *<br /></label>
-          <input type="text" id="surname" name="surname" required value="" />
-        </div>
-        <div>
-          <label for="maiden">Maiden Name<br /></label>
-          <input type="text" id="maiden" name="maiden" value="" />
-        </div>
-        <div>
-          <label for="civilStatus">Civil Status *<br /></label>
-          <select
-            class="form-select"
-            id="civilStatus"
-            name="civilStatus"
-            required
-          >
-            <option selected value="">None Selected</option>
-            <option value="1">Single</option>
-            <option value="2">Married</option>
-            <option value="3">Divorced</option>
-            <option value="4">Widowed</option>
-          </select>
-        </div>
-        <div>
-          <label for="gender">Gender at Birth *<br /></label>
-          <select class="form-select" id="gender" name="gender" required>
-            <option selected value="">None Selected</option>
-            <option value="1">Male</option>
-            <option value="2">Female</option>
-          </select>
-        </div>
-        <div>
-          <label for="bdate">Birth Date<br /></label>
-          <input type="date" id="bdate" name="bdate" />
+        <div class="grid-item">
+          <div>
+            <label for="maiden">Maiden Name<br /></label>
+            <input type="text" id="maiden" name="maiden" value="" />
+          </div>
+          <div>
+            <label for="civilStatus">Civil Status *<br /></label>
+            <select
+              class="form-select"
+              id="civilStatus"
+              name="civilStatus"
+              required
+            >
+              <option selected value="">None Selected</option>
+              <option value="1">Single</option>
+              <option value="2">Married</option>
+              <option value="3">Divorced</option>
+              <option value="4">Widowed</option>
+            </select>
+          </div>
+          <div>
+            <label for="gender">Gender at Birth *<br /></label>
+            <select class="form-select" id="gender" name="gender" required>
+              <option selected value="">None Selected</option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+            </select>
+          </div>
+          <div>
+            <label for="bdate">Birth Date<br /></label>
+            <input type="date" id="bdate" name="bdate" />
+          </div>
         </div>
       </div>
-    
+    </div>
     <div>
       <header style="font-size: 29">Contact Information</header>
-      <div>
-        <label for="contact">Contact Number *<br /></label>
-        <input type="text" id="contact" name="contact" value="" />
+    </div>
+    <div class="grid-container">
+      <div class="grid-item">
+        <div>
+          <label for="contact">Contact Number *<br /></label>
+          <input type="text" id="contact" name="contact" value="" />
+        </div>
+        <div>
+          <label for="pEmail">Primary Email Address *<br /></label>
+          <input
+            type="text"
+            id="pEmail"
+            name="pEmail"
+            value="Your Microsoft Office 365 address"
+          />
+        </div>
       </div>
-      <div>
-        <label for="pEmail">Primary Email Address *<br /></label>
-        <input
-          type="text"
-          id="pEmail"
-          name="pEmail"
-          value="Your Microsoft Office 365 address"
-        />
-      </div>
-      <div>
-        <label for="sEmail">Secondary Email Address *<br /></label>
+      <div class="grid-item">
+        <div>
+          <label for="sEmail">Secondary Email Address *<br /></label>
         <input
           type="text"
           id="sEmail"
           name="sEmail"
           value="Your active personal email address"
         />
-      </div>
-      <div>
-        <label for="resume-link">Resumé Link*<br /></label>
-        <input type="text" id="resume-link" name="resume-link" value="" />
+        </div>
+        <div>
+          <label for="resume-link">Resumé Link*<br /></label>
+          <input type="text" id="resume-link" name="resume-link" value="" />
+        </div>
       </div>
       <div>
         <input
@@ -133,13 +144,16 @@
           type="radio"
           value="0"
         />
-        <label class="form-check-label" for="pAddress"
-          >Check this if you are currently residing in this address<br />Present
-          Address</label
-        >
+        <label class="form-check-label" for="pAddress">
+          <text class="red">Check this if you are currently residing in this address</text>
+          <br /><header>Present Address</header></label>
       </div>
-      <div>
-        <select class="form-select" name="country" required>
+    </div>
+    <div class="grid-container">
+    <div class="grid-item">
+      <div><label>Country</label>
+        <div>
+          <select class="form-select" name="country" required>
           <option selected value="">None Selected</option>
           <option value="1">Afghanistan</option>
           <option value="2">Albania</option>
@@ -393,7 +407,8 @@
           <option value="248">Zambia</option>
           <option value="249">Zimbabwe</option>
           <option value="250">Åland Islands</option>
-        </select>
+          </select>
+        </div>
       </div>
       <div>
         <label>Island Group</label>
@@ -419,6 +434,8 @@
           </select>
         </div>
       </div>
+    </div>
+    <div class="grid-item">
       <div>
         <label>City and Municipality</label>
         <div>
@@ -456,6 +473,7 @@
           />
         </div>
       </div>
+    </div>
     </div>
   <div>
     <header style="font-size: 29">EDUCATIONAL BACKGROUND</header>
